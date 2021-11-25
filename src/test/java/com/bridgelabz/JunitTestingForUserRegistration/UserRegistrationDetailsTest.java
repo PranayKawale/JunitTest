@@ -11,14 +11,14 @@ public class UserRegistrationDetailsTest
     
     @Test
     public void testFirstName(){
-        String fName = "Geeta";
+        String fName = "Pranay";
         boolean check = user.firstNameCheck(fName);
         assertTrue( check);
     }
 
     @Test
     public void testLastName(){
-        String lName = "Math";
+        String lName = "kawale";
         boolean chek = user.lastNameCheck(lName);
         assertTrue( chek);
     }
@@ -32,21 +32,21 @@ public class UserRegistrationDetailsTest
 
     @Test
     public void testMobileNum(){
-        String mobile = "91 9533182605";
+        String mobile = "91 9503182405";
         boolean chek = user.mobileNum(mobile);
         assertTrue( chek);
     }
 
     @Test
     public void testPassWordRule1(){
-        String pass = "geetamath";
+        String pass = "pranaykawale";
         boolean chek = user.passWordRule1(pass);
         assertTrue( chek);
     }
 
     @Test
     public void testPassWordRule2(){
-        String pass = "Geetasmath";
+        String pass = "Pranaykawale";
         boolean chek = user.passWordRule2(pass);
         assertTrue( chek);
     }
@@ -54,14 +54,14 @@ public class UserRegistrationDetailsTest
 
     @Test
     public void testPassWordRule3(){
-        String pass = "Geetamaths1";
+        String pass = "Pranaykawale1";
         boolean chek = user.passWordRule3(pass);
         assertTrue( chek);
     }
 
     @Test
     public void testPassWordRule4(){
-        String pass = "Geetamath1@";
+        String pass = "Pranaykawale1@";
         boolean chek = user.passWordRule4(pass);
         assertTrue( chek);
     }
